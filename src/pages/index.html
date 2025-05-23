@@ -5,21 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template Electron APP</Template></title>
  
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href=../styles/styles.css>">
    
 </head>
 <body>
-    <h1> Template Electron APP</h1>
- Esse é um template com electron
+ <div class="form-container">
+    <h2>Cadastro de Aluno</h2>
  
-<!-- Arquivo para manipular o DOM -->
-<script src="../js/script.js"></script>
-   
+    <form id="form-cadastro">
+      <label for="nome">Nome do Aluno</label>
+      <input type="text" id="nome" placeholder="Digite o nome do aluno" required />
  
+      <label for="matricula">Número de Matrícula</label>
+      <input type="text" id="matricula" placeholder="Ex: 2025A123" required />
  
+      <label for="idade">Idade</label>
+      <input type="number" id="idade" placeholder="Digite a idade" required />
  
+      <label for="mae">Nome da Mãe</label>
+      <input type="text" id="mae" placeholder="Digite o nome da mãe" required />
  
+      <label for="telefone">Telefone de Emergência</label>
+      <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" required />
  
- 
+      <button type="submit">Cadastrar Aluno</button>
+    </form>
+  </div>
+   <script src="../js/script.js"></script>
 </body>
-</html>
+    
+ 
